@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafés Especiais Premium - Qualidade Excepcional</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-coffee"></i>
+                    <span>Cafés Especiais</span>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#home" class="nav-link">Início</a>
+                    <a href="#about" class="nav-link">Sobre</a>
+                    <a href="#products" class="nav-link">Produtos</a>
+                    <a href="#contact" class="nav-link">Contato</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Cafés Especiais de Qualidade Premium</h1>
+            <p class="hero-subtitle">Descubra sabores únicos e aromas incomparáveis dos melhores grãos selecionados, direto da região do Caparaó!</p>
+            <a href="#products" class="cta-button">
+                <i class="fab fa-whatsapp"></i>
+                Comprar Agora
+            </a>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero-coffee.jpg" alt="Cafés especiais premium">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Nossa Paixão pelo Café</h2>
+                    <p>Somos especialistas em cafés de qualidade excepcional, selecionando cuidadosamente os melhores grãos da região do Caparaó. Nossa missão é proporcionar uma experiência única a cada xícara, facilitando o acesso a cafés especiais a todos.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <h3>100% Arábica</h3>
+                            <p>Grãos selecionados das melhores fazendas</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-fire"></i>
+                            <h3>Torra Artesanal</h3>
+                            <p>Processo cuidadoso para realçar sabores únicos</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shipping-fast"></i>
+                            <h3>Entrega Semanal</h3>
+                            <p>Café fresco direto na sua casa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/coffee-beans.png" alt="Grãos de café especiais">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Nossos Cafés Especiais</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/pic5.jpg" alt="Café Caramelo e Mel">
+                    </div>
+                    <div class="product-info">
+                        <h3>Caramelo e Mel</h3>
+                        <p class="product-description">Doçura intensa, corpo alto, acidez cítrica equilibrada com notas de caramelo e mel.</p>
+                        <div class="product-details">
+                            <span class="origin">Origem: Caparaó </span>
+                            <span class="roast">Torra: Média</span>
+                            <span class="roast">Pontuação: 87 pontos</span>
+                        </div>
+                        <div class="product-details">
+                            <span class="origin">Variedade: Catuaí 81 </span>
+                            <span class="roast">Altitude: 1.200 M</span>
+                            <span class="roast">Peso: 250g </span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">R$ 40,00</span>
+                            <button class="buy-button" onclick="buyProduct('Café Caramelo e Mel', '40,00')">
+                                <i class="fab fa-whatsapp"></i>
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/pic6.jpg" alt="Café Especial Catuaí">
+                    </div>
+                    <div class="product-info">
+                        <h3>Caramelo e Chocolate</h3>
+                        <p class="product-description">Doçura intensa, corpo alto com notas de caramelo e chocolate.</p>
+                        <div class="product-details">
+                            <span class="origin">Origem: Caparaó </span>
+                            <span class="roast">Torra: Média</span>
+                            <span class="roast">Pontuação: 87 pontos</span>
+                        </div>
+                        <div class="product-details">
+                            <span class="origin">Variedade: Catuaí Vermelho</span>
+                            <span class="roast">Altitude: 1.200M</span>
+                            <span class="roast">Peso: 250g </span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">R$ 42,00</span>
+                            <button class="buy-button" onclick="buyProduct('Café Especial Catuaí', '42,00')">
+                                <i class="fab fa-whatsapp"></i>
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/pic1.jpg" alt="Café Especial Catuaí">
+                    </div>
+                    <div class="product-info">
+                        <h3>Frutas Amarelas</h3>
+                        <p class="product-description">Doçura intensa, corpo licoso, sabor frutado, acidez citrica brilhante com notas de frutas amarelas, maracujá.</p>
+                        <div class="product-details">
+                            <span class="origin">Origem: Caparaó </span>
+                            <span class="roast">Torra: Média</span>
+                            <span class="roast">Pontuação: 87 pontos</span>
+                        </div>
+                        <div class="product-details">
+                            <span class="origin">Variedade: Catucaí 785 </span>
+                            <span class="roast">Altitude: 1.150M </span>
+                            <span class="roast">Peso: 250g </span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">R$ 45,00</span>
+                            <button class="buy-button" onclick="buyProduct('Café Especial Catuaí', '42,00')">
+                                <i class="fab fa-whatsapp"></i>
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/pic7.jpg" alt="Café Especial Catuaí">
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Frutas Vermelhas</h3>
+                        <p class="product-description">Doçura intensa, corpo licoso, sabor frutado, acidez citrica brilhante com notas de frutas amarelas, maracujá.</p>
+                        <div class="product-details">
+                            <span class="origin">Origem: Caparaó </span>
+                            <span class="roast">Torra: Média</span>
+                            <span class="roast">Pontuação: 87 pontos</span>
+                        </div>
+                        <div class="product-details">
+                            <span class="origin">Variedade: Catuaí 81 </span>
+                            <span class="roast">Altitude: 1.150M </span>
+                            <span class="roast">Peso: 250g </span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">R$ 45,00</span>
+                            <button class="buy-button" onclick="buyProduct('Café Especial Catuaí', '42,00')">
+                                <i class="fab fa-whatsapp"></i>
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/pic6.jpg" alt="Café Especial Mundo Novo">
+                    </div>
+                    <div class="product-info">
+                        <h3>Café Gourmet Intenso - Em Pó</h3>
+                        <p class="product-description">Doçura intensa, corpo alto com notas de chocolate.</p>
+                        <div class="product-details">
+                            <span class="origin">Origem: Caparaó </span>
+                            <span class="roast">Torra: Média</span>
+                        </div>
+                        <div class="product-details">
+                            <span class="origin">Variedade: Catuaí Vermelho </span>
+                            <span class="roast">Altitude: 1.100M </span>
+                            <span class="roast">Peso: 500g </span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">R$ 53,00</span>
+                            <button class="buy-button" onclick="buyProduct('Café Especial Mundo Novo', '48,00')">
+                                <i class="fab fa-whatsapp"></i>
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Buy Section -->
+    <section class="how-to-buy">
+        <div class="container">
+            <h2 class="section-title">Como Comprar</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Escolha seu Café</h3>
+                    <p>Selecione o café especial que mais combina com seu paladar</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Clique em Comprar</h3>
+                    <p>Será redirecionado para nosso WhatsApp com a mensagem pronta</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Pagamento via Pix</h3>
+                    <p>Enviaremos os dados do Pix para pagamento rápido e seguro</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Receba em Casa</h3>
+                    <p>Seu café será torrado e enviado fresquinho para você</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Torra -->
+    <section class="torra">
+        <div class="container">
+            <h2 class="section-title">Café sempre Fresco</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>Torra Semanal</h3>
+                    <p>Nós não trabalhamos com café a pronta entrega. Os cafés são torrados semanalmente, tanto em torrefações parceiras quanto direto junto ao produtor.</p>
+                    <p>Assim, garantimos que você sempre receberá um café com torra fresca, aroma agradável e sabor único.</p>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <hr></hr>
+    <div>
+        <p><span style="color: #000000;"><strong>&bull;&nbsp;EM GR&Atilde;OS</strong></span></p>
+        <p>Sempre recomendamos a compra do caf&eacute; em gr&atilde;os, pois suas caracter&iacute;sticas sensoriais permanecem por mais tempo.&nbsp;</p>
+        <br>
+        <p><span style="color: #000000;">&bull;&nbsp;<strong>MO&Iacute;DO</strong></span></p>
+        <p>Nossos caf&eacute;s em gr&atilde;os tem validade de seis meses.<br />Depois de mo&iacute;do, os atributos senroriais do caf&eacute; ainda permanecem, em m&eacute;dia,&nbsp; por 7 dias.<br />​Passado esse prazo,&nbsp;o caf&eacute;&nbsp;<strong>n&atilde;o</strong>&nbsp;fica impr&oacute;prio para o consumo, mas, devido &agrave; oxida&ccedil;&atilde;o (mais acelerada no caf&eacute; mo&iacute;do) come&ccedil;a a&nbsp;perder suas caracter&iacute;sticas sensoriais, principalmente ap&oacute;s a abertura do pacote.<br />&Eacute; outra experi&ecirc;ncia&nbsp;saborear um&nbsp;caf&eacute; mo&iacute;do na hora! Perceber os aromas e sabores em sua maior intensidade.<br />Para isso, recomendamos a compra do caf&eacute; sempre em gr&atilde;os e&nbsp;realizar a moagem o mais pr&oacute;ximo poss&iacute;vel do momento do preparo.<br />Nosso padr&atilde;o de moagem &eacute; apropriado para fazer o caf&eacute; coado, mas pode ser que atenda a outros m&eacute;todos de preparo.</p>
+        <br>
+        <p style="font: inherit; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; max-width: 100%; color: #000000; background: 0px 0px; box-sizing: border-box;"><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline;"><strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline;">⚠ ATEN&Ccedil;&Atilde;O! PRODUTO COM ENVIO AGENDADO</strong></span></p>
+        <br>
+        <p style="margin: 20px 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; max-width: 100%; color: #000000; font-family: Roboto, sans-serif; font-size: 14px;"><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline;"><strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline;">&bull; Sobre o&nbsp;prazo adicional para produ&ccedil;&atilde;o e envios</strong></span></p>
+        <p style="margin: 20px 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; max-width: 100%; color: #000000; font-family: Roboto, sans-serif; font-size: 14px;"><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline;">A nossa torra &eacute;&nbsp;por demanda, toda quarta-feira. Os envios s&atilde;o feitos at&eacute; terça feira da semana seguinte da torra.</span><br /><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline;">Assim garantimos que os caf&eacute;s sejam enviados sempre com torra fresca.</span><br /><br /><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline;">Os caf&eacute;s dos pedidos, com pagamentos confirmados,&nbsp;</span><strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline;">at&eacute; terça-feira, 17h</strong><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline;">,&nbsp;<strong>ser&atilde;o torrados na quarta-feira e enviados at&eacute; na terça-feira</strong>&nbsp;da semana seguinte.<br />Pode ser que o envio adiante para segunda feira.</span><br /><br /><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline;">
+        <p style="margin: 20px 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; max-width: 100%; color: #000000; font-family: Roboto, sans-serif; font-size: 14px;"><strong>⚠ PRAZO DO FRETE</strong></p>
+        <p style="margin: 20px 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; max-width: 100%; color: #000000; font-family: Roboto, sans-serif; font-size: 14px;"><span style="text-align: center;">O prazo do frete escolhido deve ser considerado a partir da data de envio e N&Atilde;O da data da compra.<br />Quando seu pedido for postado na transportadora/Correios, voc&ecirc; receber&aacute; uma notifica&ccedil;&atilde;o via e-mail com o seu c&oacute;digo de rastreio.</span><br />A partir da data de envio come&ccedil;a a contar o prazo do frete escolhido.<br />Verifique sempre a sua caixa de e-mail, as notifica&ccedil;&otilde;es sobre o andamento do seu pedido&nbsp;ser&atilde;o enviadas para o seu e-mail.<br />Se n&atilde;o estiver recebendo as nossas notifica&ccedil;&otilde;es, verifique a caixa SPAM,&nbsp;LIXO ELETR&Ocirc;NICO ou aba PROMO&Ccedil;&Otilde;ES (Gmail) do seu e-mail.</p>
+        <p style="margin: 20px 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; max-width: 100%; color: #000000; font-family: Roboto, sans-serif; font-size: 14px;">******************<br /><em><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline;"><strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline;">SUGEST&Atilde;O DE PREPARO</strong></span><br />10g de caf&eacute;&nbsp;para 100ml de &aacute;gua<br />Ref: 10g = 1 colher de sopa<br />Essa medida &eacute; apenas uma refer&ecirc;ncia, voc&ecirc; pode ajust&aacute;-la conforme o m&eacute;todo que estiver utlizando e, claro, pra ficar o caf&eacute; do jeito que voc&ecirc; gosta ;)</em></p>
+    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <p>(31) 99857-9010</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>E-mail</h3>
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Localização</h3>
+                            <p>Belo Horizonte - MG</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <h3>Siga-nos</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-coffee"></i>
+                    <span>Café Premium</span>
+                </div>
+                <p>&copy; 2025 Café Premium. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
